@@ -1,6 +1,7 @@
 package com.mondesecret.sorcellerie;
 
 import com.mondesecret.sorcellerie.personnages.Eleve;
+import com.mondesecret.sorcellerie.personnages.Maison;
 import com.mondesecret.sorcellerie.personnages.Professeur;
 import com.mondesecret.sorcellerie.personnages.Sexe;
 
@@ -17,11 +18,6 @@ public class Poudlard {
 	public Poudlard() {
 		System.out.println("coucou");
 	}
-	
-	public Poudlard(Eleve el)
-	{
-		this.eleve = el;
-	}
 	    
 	/** This method provides to inscribe the news students
 	 * @param nom
@@ -29,10 +25,20 @@ public class Poudlard {
 	 * @param sexe
 	 * @param maison
 	 */
-	public void inscriptionEleve(final String nom, final String prenom, final Sexe sexe){
+	public void inscriptionEleve(final String nom, final String prenom, final Sexe sexe, final Maison maison){
 			eleve.setNom(nom);
 			eleve.setPrenom(prenom);
 			eleve.setSexe(sexe);
+			switch(eleve.getMaison()){
+				case 'G' : maison.GRYFFINDOR;
+					break;
+				case 'R' : maison.RAVENCLAW;
+					break;
+				case 'H' : maison.HUFFLEPUFF;
+					break;
+				case 'S' : maison.SLYTHRIN;
+					break;
+			}
 	}
 	
 	/** This method provides to inscribe the teachers
