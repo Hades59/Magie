@@ -2,8 +2,7 @@ package com.mondesecret.sorcellerie.personnages;
 
 
 public class Eleve extends Personnages {
-	/** sexe : Sexe */
-	private Sexe sexe;
+	
 	/** maison : Maison */
 	private Maison maison;
 	/**

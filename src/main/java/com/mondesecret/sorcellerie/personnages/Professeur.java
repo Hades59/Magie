@@ -1,8 +1,7 @@
 package com.mondesecret.sorcellerie.personnages;
 
 public class Professeur extends Personnages{
-	/** sexe : Sexe */
-	private Sexe sexe;
+	
 	/** matiere : String */
 	private String matiere;
 	/**
